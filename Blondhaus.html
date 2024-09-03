@@ -15,10 +15,26 @@
     <!-- main styles start-->
 
     <style>
+      html {
+          font-size: 16px; /* Default, 1rem = 16px */
+      }
+      
+      @media (max-width: 600px) {
+          html {
+              font-size: 14px; /* On smaller screens, 1rem = 14px */
+          }
+      }
+
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+
+      :root {
+          --black: #2c2d2c;
+          --white: #fff;
+          --lightGray: #eaeaea;
       }
 
       body {
@@ -42,21 +58,31 @@
         }
       }
 
+      h1, h2, h3, h4, h5, h6, p{
+        color: var(--black);
+      }
+
       h1 {
-        font-weight: 2.6rem;
+        font-size: 2.6rem;
         text-transform: uppercase;
       }
 
       h2 {
-        font-weight: 2.25rem;
+        font-size: 2.25rem;
+        text-transform: uppercase;
       }
 
       h3 {
-        font-weight: 2rem;
+        font-size: 2rem;
       }
 
       h4 {
-        font-weight: 1.65rem;
+        font-size: 1.65rem;
+      }
+
+      h5{
+        font-weight: 400;
+        font-size: 1.5rem;
       }
 
       p.subtitleLight {
@@ -69,10 +95,12 @@
 
       p.regularText {
         font-size: 1.125rem;
+        font-weight: 300;
       }
 
       p.smallLabel {
         font-size: 1rem;
+        font-weight: 300;
       }
 
       p.bold {
@@ -123,13 +151,7 @@
         max-width: 800px;
       }
 
-      .wrappedListSection .upperTitle h2 {
-        font-size: 28px;
-        text-align: center;
-      }
-
-      .wrappedListSection .upperTitle h3 {
-        font-size: 22px;
+      .wrappedListSection .upperTitle h2, .wrappedListSection .upperTitle h5 {      
         text-align: center;
       }
 
@@ -147,53 +169,73 @@
         gap: 10px;
         max-width: 300px;
       }
+
+      p{
+        text-align: center;
+      }
+
+
+      .cont p{
+        text-align: right;
+      }
+
+      .test{
+        text-align: left;
+      }
+
     </style>
+
+    <div class="cont">
+      <p class="test">MEWMEME</p>
+    </div>
+
+
 
     <div class="wrappedListSection pageWidth">
       <div class="upperTitle">
         <h2>Our Education Process</h2>
-        <h3>
+        <h5>
           At Blondhaus, our education process is meticulously designed to
           provide a comprehensive and practical learning experience. Here`s an
           in-depth look at the steps involved:
-        </h3>
+        </h5>
       </div>
       <div class="listItems">
         <div class="oneBlock">
-          <h2>Initial Consultation and Orientation</h2>
-          <p>
+          <p class="regularText">Initial Consultation and Orientation</p>
+          <p class="smallLabel">
             Begin with an orientation session where we introduce you to our
             facilities, instructors, and course structure. Discuss your goals
             and customize your learning path.
           </p>
         </div>
         <div class="oneBlock">
-          <h2>Initial Consultation and Orientation</h2>
-          <p>
+          <p class="regularText">Initial Consultation and Orientation</p>
+          <p class="smallLabel">
             Begin with an orientation session where we introduce you to our
             facilities, instructors, and course structure. Discuss your goals
             and customize your learning path.
           </p>
         </div>
         <div class="oneBlock">
-          <h2>Initial Consultation and Orientation</h2>
-          <p>
+          <p class="regularText">Initial Consultation and Orientation</p>
+          <p class="smallLabel">
             Begin with an orientation session where we introduce you to our
             facilities, instructors, and course structure. Discuss your goals
             and customize your learning path.
           </p>
         </div>
         <div class="oneBlock">
-          <h2>Initial Consultation and Orientation</h2>
-          <p>
+          <p class="regularText">Initial Consultation and Orientation</p>
+          <p class="smallLabel">
             Begin with an orientation session where we introduce you to our
             facilities, instructors, and course structure. Discuss your goals
             and customize your learning path.
           </p>
         </div>
         <div class="oneBlock">
-          <h2>Initial Consultation and Orientation</h2>
-          <p>
+          <p class="regularText">Initial Consultation and Orientation</p>
+          <p class="smallLabel">
             Begin with an orientation session where we introduce you to our
             facilities, instructors, and course structure. Discuss your goals
             and customize your learning path.
