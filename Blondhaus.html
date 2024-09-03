@@ -15,8 +15,31 @@
     <!-- main styles start-->
 
     <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family: Josefin Sans, sans-serif;
+      }
+
+      .pageWidth{
+        width: 100%;
+        padding: 25px;
+      }
+
+      @media screen and (min-width:1600px) {
+        .pageWidth{
+        padding: 25px 10%;
+      }
+      }
+
+      @media screen and (max-width:600px) {
+        .pageWidth{
+        padding: 15px;
+      }
       }
 
       body h1 {
@@ -57,6 +80,8 @@
       .educationProcess {
         max-width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 30px;
       }
@@ -65,6 +90,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        max-width: 800px;
       }
 
       .educationProcess .upperTitle h2 {
@@ -77,27 +103,19 @@
         text-align: center;
       }
 
-      .educationProcess .gridContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 35px;
-        grid-row-gap: 35px;
-        padding: 0px 150px 0px 150px;
-        text-align: center;
+      .educationProcess .listItems {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
       }
 
-      .educationProcess .gridContainer .oneBlock {
+      .educationProcess .listItems .oneBlock {
         display: flex;
         flex-direction: column;
         gap: 10px;
-      }
-
-      .educationProcess .gridContainer .oneBlock h2 {
-        font-size: 18px;
-      }
-
-      .educationProcess .gridContainer .oneBlock p {
-        font-size: 16px;
+        max-width: 300px;
       }
     </style>
 
@@ -110,7 +128,7 @@
           in-depth look at the steps involved:
         </h3>
       </div>
-      <div class="gridContainer">
+      <div class="listItems">
         <div class="oneBlock">
           <h2>Initial Consultation and Orientation</h2>
           <p>
