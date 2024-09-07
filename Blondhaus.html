@@ -997,8 +997,8 @@
         }
 
         .categoriesWithTitle .imgContainer .textOverlay {
-        bottom: 35px;
-      }
+          bottom: 35px;
+        }
       }
     </style>
 
@@ -1030,5 +1030,123 @@
     </div>
 
     <!-- categoriesWithTitle end -->
+
+    <!-- latestNewsContainer start -->
+
+    <style>
+      .latestNewsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+      }
+
+      .latestNewsContainer .newsContainer {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+
+      .latestNewsContainer .newsContainer .oneNews {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 450px;
+      }
+
+      .latestNewsContainer .newsContainer .oneNews img {
+        max-width: 450px;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      .latestNewsContainer .newsContainer .oneNews .textContainer {
+        display: flex;
+        flex-direction: column;
+        text-align-last: left;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .latestNewsContainer .newsContainer .oneNews .textContainer .regularText {
+        text-align: left;
+      }
+
+      .latestNewsContainer .newsContainer .oneNews .textContainer .bold {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 600px) {
+        .latestNewsContainer .newsContainer {
+          flex-direction: column;
+        }
+
+        .latestNewsContainer .newsContainer .oneNews {
+          width: 100%;
+        }
+
+        .latestNewsContainer .newsContainer .oneNews .textContainer {
+          text-align-last: center;
+        }
+
+        .latestNewsContainer
+          .newsContainer
+          .oneNews
+          .textContainer
+          .regularText {
+          text-align: center;
+        }
+
+        .latestNewsContainer .newsContainer {
+          gap: 50px;
+        }
+
+        .latestNewsContainer .newsContainer .oneNews img {
+          height: 300px;
+          max-height: 300px;
+        }
+      }
+    </style>
+
+    <div class="latestNewsContainer pageWidth">
+      <h2>Read more</h2>
+      <div class="newsContainer">
+        <div class="oneNews">
+          <img src="./img/newsImage.png" alt="" />
+          <div class="textContainer">
+            <p class="smallLabel">Collaboration</p>
+            <h3>Collaboration</h3>
+            <p class="regularText">
+              In an unprecedented collaboration that merges two giants in the
+              beauty industry, L'Oréal and Wella have come together to redefine
+              the landscape of professional haircare. This groundbreaking
+              partnership combines the rich heritage, expertise, and innovation
+              of both brands, creating a synergy that promises to revolutionize
+              the way we approach beauty.
+            </p>
+            <p class="bold">Read more</p>
+          </div>
+        </div>
+        <div class="oneNews">
+          <img src="./img/newsImage.png" alt="" />
+          <div class="textContainer">
+            <p class="smallLabel">Collaboration</p>
+            <h3>Collaboration</h3>
+            <p class="regularText">
+              In an unprecedented collaboration that merges two giants in the
+              beauty industry, L'Oréal and Wella have come together to redefine
+              the landscape of professional haircare. This groundbreaking
+              partnership combines the rich heritage, expertise, and innovation
+              of both brands, creating a synergy that promises to revolutionize
+              the way we approach beauty.
+            </p>
+            <p class="bold">Read more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- latestNewsContainer end -->
   </body>
 </html>
