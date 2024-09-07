@@ -306,7 +306,7 @@
         }
 
         .learnMoreContainer .lastInstImages img {
-          max-width: 160px;
+          max-width: 180px;
         }
 
         .learnMoreContainer .ourBenefits {
@@ -935,6 +935,100 @@
 
     <!-- switchSideImage end -->
 
-    
+    <!-- categoriesWithTitle start -->
+
+    <style>
+      .categoriesWithTitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+      }
+
+      .categoriesWithTitle .upperText {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .categoriesWithTitle .imgContainer {
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+        gap: 10px;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .categoriesWithTitle .imgContainer .oneImage {
+        position: relative;
+      }
+
+      .categoriesWithTitle .imgContainer .oneImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .categoriesWithTitle .imgContainer .oneImage:nth-child(1) {
+        grid-row: span 2;
+      }
+
+      .categoriesWithTitle .imgContainer .textOverlay {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        padding: 15px;
+        background-color: rgba(44, 45, 44, 0.5);
+        text-align: center;
+      }
+
+      .categoriesWithTitle .imgContainer .textOverlay p {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 600px) {
+        .categoriesWithTitle .imgContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .categoriesWithTitle .imgContainer .textOverlay {
+        bottom: 35px;
+      }
+      }
+    </style>
+
+    <div class="categoriesWithTitle pageWidth">
+      <div class="upperText">
+        <p class="smallLabel">DISCOVER OUR</p>
+        <h3>COLLECTIONS</h3>
+      </div>
+      <div class="imgContainer">
+        <div class="oneImage">
+          <img src="./img/123.png" alt="Conditioners" />
+          <div class="textOverlay">
+            <p class="subtitleLight">CONDITIONERS</p>
+          </div>
+        </div>
+        <div class="oneImage">
+          <img src="./img/123.png" alt="Shampoos" />
+          <div class="textOverlay">
+            <p class="subtitleLight">SHAMPOOS</p>
+          </div>
+        </div>
+        <div class="oneImage">
+          <img src="./img/123.png" alt="Masks" />
+          <div class="textOverlay">
+            <p class="subtitleLight">MASKS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categoriesWithTitle end -->
   </body>
 </html>
