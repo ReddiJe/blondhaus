@@ -183,18 +183,11 @@
       }
 
       @media screen and (max-width: 600px) {
+        .wrappedListSection .listItems {
+          gap: 30px;
+        }
         .wrappedListSection .listItems .oneBlock {
           max-width: 100%;
-        }
-
-        .learnMoreContainer .lastInstImages {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-
-        .learnMoreContainer .lastInstImages img {
-          max-width: 155px;
         }
       }
     </style>
@@ -299,6 +292,28 @@
         flex-direction: column;
         align-items: center;
         gap: 15px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .learnMoreContainer {
+          gap: 25px;
+        }
+
+        .learnMoreContainer .lastInstImages {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .learnMoreContainer .lastInstImages img {
+          max-width: 160px;
+        }
+
+        .learnMoreContainer .ourBenefits {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
       }
     </style>
 
@@ -472,6 +487,19 @@
       .whyChooseUs .mainBenefits .oneBlock p {
         text-align: center;
       }
+
+      @media screen and (max-width: 600px) {
+        .whyChooseUs {
+          padding: 50px 25px;
+        }
+        .whyChooseUs .upperTitle {
+          text-align: center;
+        }
+
+        .whyChooseUs .mainBenefits {
+          gap: 30px;
+        }
+      }
     </style>
 
     <div class="whyChooseUs pageWidth">
@@ -549,6 +577,20 @@
         max-width: 250px;
         height: auto;
       }
+
+      @media screen and (max-width: 600px) {
+        .selectedBrands .upperText {
+          padding: 0 15px;
+        }
+
+        .selectedBrands .brandsContainer {
+          gap: 25px;
+        }
+
+        .selectedBrands .brandsContainer .oneBlock img {
+          max-width: 200px;
+        }
+      }
     </style>
 
     <div class="selectedBrands pageWidth">
@@ -599,6 +641,16 @@
 
       .termsAndConditions .textContainer p {
         text-align: left;
+      }
+
+      @media screen and (max-width: 600px) {
+        .termsAndConditions .textContainer h3 {
+          text-align: left;
+        }
+        .termsAndConditions .textContainer {
+          padding: 0 25px;
+          gap: 35px;
+        }
       }
     </style>
 
