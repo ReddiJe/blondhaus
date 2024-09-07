@@ -867,10 +867,74 @@
 
     <!-- switchSIdeImage start -->
 
-    <style></style>
+    <style>
+      .switchSIdeImage {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 0 15px;
+      }
 
-    <div class="switchSIdeImage pageWidth"></div>
+      .switchSIdeImage .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 45%;
+      }
+
+      .switchSIdeImage .textContainer p {
+        text-align: left;
+      }
+
+      .switchSIdeImage .imgContainer {
+        width: 45%;
+      }
+
+      .switchSIdeImage .imgContainer img {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 550px;
+        object-fit: cover;
+      }
+
+      @media screen and (max-width: 600px) {
+        .switchSIdeImage {
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+        }
+
+        .switchSIdeImage .textContainer p {
+          text-align: center;
+        }
+
+        .switchSIdeImage .imgContainer,
+        .switchSIdeImage .textContainer {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <div class="switchSIdeImage pageWidth">
+      <div class="textContainer">
+        <h3>Personalized Consultation</h3>
+        <p>
+          We begin with a one-on-one consultation to understand your hair goals
+          and preferences. Our stylist will assess your hair type and discuss
+          the look you want to achieve.Based on the consultation, we create a
+          customized plan tailored to your specific needs. We outline the steps
+          involved and the products we'll use to ensure the best results.
+        </p>
+      </div>
+      <div class="imgContainer">
+        <img src="./img/tim-mossholder-ArQIWcmOlA8-unsplash 1.png" alt="" />
+      </div>
+    </div>
 
     <!-- switchSideImage end -->
+
+    
   </body>
 </html>
