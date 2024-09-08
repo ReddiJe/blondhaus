@@ -1123,7 +1123,7 @@
               of both brands, creating a synergy that promises to revolutionize
               the way we approach beauty.
             </p>
-            <p class="bold">Read more</p>
+            <a href="#"> <p class="bold">Read more</p></a>
           </div>
         </div>
         <div class="oneNews">
@@ -1509,7 +1509,7 @@
         padding-top: 20px;
       }
 
-      .products .productsContainer .productsList a{
+      .products .productsContainer .productsList a {
         text-decoration: none;
       }
 
@@ -1524,6 +1524,32 @@
       .products .buttonContainer a {
         text-decoration: none;
         color: #fff;
+      }
+
+      @media screen and (max-width: 600px) {
+        .products .categoriesContainer {
+          flex-direction: column;
+        }
+
+        .products .productsContainer .productsList {
+          flex-direction: column;
+          gap: 25px;
+        }
+        .products .productsContainer .productsList .oneProduct {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .products .productsContainer .productsList a {
+          display: flex;
+          gap: 5px;
+          flex-direction: column;
+        }
+
+        .products .categoriesContainer {
+          align-items: center;
+        }
       }
     </style>
 
@@ -1631,5 +1657,77 @@
     </script>
 
     <!-- products end -->
+
+    <!-- suggestedProducts start -->
+
+    <style>
+      .suggestedProducts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+      }
+
+      .suggestedProducts .productsList {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .suggestedProducts .productsList .oneProduct {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .suggestedProducts .productsList .oneProduct {
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        .suggestedProducts .productsList {
+          flex-direction: column;
+          gap: 25px;
+        }
+
+        .suggestedProducts .productsList .oneProduct {
+          gap: 5px;
+        }
+      }
+    </style>
+
+    <div class="suggestedProducts pageWidth">
+      <h3>YOU MAY ALSO LIKE</h3>
+      <div class="productsList">
+        <a href="#" class="oneProduct">
+          <img src="./img/product.png" alt="" />
+          <p class="smallLabel">L`oreal</p>
+          <p class="regularText">PURE RESOURCE SHAMPOO</p>
+          <p class="smallLabel">CAD $32.20</p>
+        </a>
+        <a href="#" class="oneProduct">
+          <img src="./img/product.png" alt="" />
+          <p class="smallLabel">L`oreal</p>
+          <p class="regularText">PURE RESOURCE SHAMPOO</p>
+          <p class="smallLabel">CAD $32.20</p>
+        </a>
+        <a href="#" class="oneProduct">
+          <img src="./img/product.png" alt="" />
+          <p class="smallLabel">L`oreal</p>
+          <p class="regularText">PURE RESOURCE SHAMPOO</p>
+          <p class="smallLabel">CAD $32.20</p>
+        </a>
+        <a href="#" class="oneProduct">
+          <img src="./img/product.png" alt="" />
+          <p class="smallLabel">L`oreal</p>
+          <p class="regularText">PURE RESOURCE SHAMPOO</p>
+          <p class="smallLabel">CAD $32.20</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- suggestedProducts end -->
   </body>
 </html>
