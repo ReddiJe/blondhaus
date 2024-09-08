@@ -1281,12 +1281,29 @@
         color: #fff;
       }
 
-      .servicesImagesContainer .images .textContainer h4, p {
+      .servicesImagesContainer .images .textContainer h4,
+      .servicesImagesContainer .images .textContainer p {
         color: #fff;
       }
 
       .servicesImagesContainer .images img {
-        min-width: 450px;
+        width: 100%;
+        min-width: 200px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .servicesImagesContainer {
+          padding: 0 5px;
+        }
+
+        .servicesImagesContainer .images {
+          flex-direction: column;
+          gap: 25px;
+        }
+
+        .servicesImagesContainer .images .oneImage {
+          flex: 1 1 100%;
+        }
       }
     </style>
 
@@ -1324,5 +1341,44 @@
     </div>
 
     <!-- servicesImagesContainer end -->
+
+    <!-- fullSizedVideo start -->
+
+    <style>
+      .fullSizedVideo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+      }
+
+      .fullSizedVideo .link img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .fullSizedVideo {
+          height: 25vh;
+        }
+
+        .fullSizedVideo {
+          padding: 0 5px;
+        }
+
+        .fullSizedVideo a,
+        .fullSizedVideo .link img {
+          height: 100%;
+        }
+      }
+    </style>
+
+    <div class="fullSizedVideo pageWidth">
+      <a class="link" href="#"> <img src="./img/video.png" alt="" /></a>
+    </div>
+    <!-- fullSizedVideo end -->
   </body>
 </html>
